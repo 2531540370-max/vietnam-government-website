@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 360">
+  <rect width="500" height="360" fill="#f8f3ec"/>
+  <rect x="60" y="120" width="120" height="160" fill="#0f5d6c"/>
+  <rect x="190" y="90" width="120" height="190" fill="#c41c1c"/>
+  <rect x="320" y="150" width="120" height="130" fill="#f2b63f"/>
+  <circle cx="120" cy="80" r="25" fill="#fff"/>
+  <circle cx="250" cy="60" r="25" fill="#fff"/>
+  <circle cx="380" cy="110" r="25" fill="#fff"/>
+  <text x="120" y="300" text-anchor="middle" font-family="Arial" font-size="16" fill="#0d1d29">Xã</text>
+  <text x="250" y="300" text-anchor="middle" font-family="Arial" font-size="16" fill="#0d1d29">Huyện</text>
+  <text x="380" y="300" text-anchor="middle" font-family="Arial" font-size="16" fill="#0d1d29">Tỉnh</text>
+</svg>

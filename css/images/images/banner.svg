@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f4f9fb"/>
+      <stop offset="100%" stop-color="#eaf3f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="420" fill="url(#bg)"/>
+  <rect x="50" y="90" width="500" height="240" rx="20" fill="#ffffff" stroke="#dfe7ec"/>
+  <rect x="80" y="120" width="120" height="180" rx="14" fill="#dceef3"/>
+  <rect x="230" y="120" width="120" height="180" rx="14" fill="#ece6d9"/>
+  <rect x="380" y="120" width="120" height="180" rx="14" fill="#f8e9d2"/>
+  <rect x="110" y="175" width="60" height="80" fill="#0d4c5d"/>
+  <rect x="260" y="155" width="60" height="100" fill="#b91c1c"/>
+  <rect x="410" y="165" width="60" height="90" fill="#f3b531"/>
+  <circle cx="140" cy="145" r="20" fill="#fff"/>
+  <circle cx="290" cy="135" r="20" fill="#fff"/>
+  <circle cx="440" cy="145" r="20" fill="#fff"/>
+  <text x="300" y="350" text-anchor="middle" font-size="30" font-family="Arial" font-weight="700" fill="#0d1d29">Cơ cấu tổ chức Việt Nam</text>
+</svg>

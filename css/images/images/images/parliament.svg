@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 360">
+  <rect width="500" height="360" fill="#f7fafb"/>
+  <rect x="60" y="120" width="380" height="160" rx="18" fill="#ffffff" stroke="#dfe7ec"/>
+  <rect x="100" y="180" width="80" height="100" fill="#0f4c5c"/>
+  <rect x="210" y="160" width="80" height="120" fill="#bf1d1d"/>
+  <rect x="320" y="145" width="80" height="135" fill="#f4b942"/>
+  <rect x="130" y="140" width="20" height="20" fill="#fff"/>
+  <rect x="240" y="120" width="20" height="20" fill="#fff"/>
+  <rect x="350" y="110" width="20" height="20" fill="#fff"/>
+  <text x="250" y="315" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#0d1d29">Quốc hội và cơ quan nhà nước</text>
+</svg>
