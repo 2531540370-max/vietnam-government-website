@@ -1,93 +1,78 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Liên hệ | Cơ cấu chính phủ Việt Nam</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - Tổ chức Bộ máy Nhà nước Việt Nam</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-wrapper">
-      <div class="brand">
-        <img src="images/flag.svg" alt="Quốc kỳ Việt Nam">
-        <div>
-          <span class="brand-name">CHÍNH PHỦ VIỆT NAM</span>
-          <small>Cơ cấu tổ chức và quyền lực nhà nước</small>
+    <header>
+        <div class="logo">
+            <img src="Emblem_of_Vietnam.svg" alt="Quốc huy Việt Nam">
+            <h1>Nhà Nước Việt Nam</h1>
         </div>
-      </div>
-      <nav class="main-nav">
-        <a href="index.html">Trang chủ</a>
-        <a href="about.html">Giới thiệu</a>
-        <a href="institutions.html">Cơ quan</a>
-        <a href="governance.html">Quản lý</a>
-        <a href="contact.html" class="active">Liên hệ</a>
-      </nav>
-    </div>
-  </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="about.html">Cơ cấu tổ chức</a></li>
+                <li><a href="governance.html">Các Bộ, Ngành</a></li>
+                <li><a href="contact.html" class="active">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section class="page-banner">
-      <div class="container">
-        <p class="eyebrow">Liên hệ</p>
-        <h1>Thông tin liên hệ và góp ý</h1>
-      </div>
-    </section>
+    <main class="contact-page">
+        <h2>Liên hệ</h2>
+        <p>Bài tập này được thực hiện nhằm mục đích học tập và tìm hiểu về cấu trúc hệ thống cũng như kiến thức về bộ máy nhà nước.</p>
 
-    <section class="section">
-      <div class="container contact-layout">
-        <div class="contact-card">
-          <h2>Thông tin liên hệ</h2>
-          <ul class="contact-list">
-            <li><strong>Địa chỉ:</strong> Hà Nội, Việt Nam</li>
-            <li><strong>Điện thoại:</strong> +84 24 0000 0000</li>
-            <li><strong>Email:</strong> contact@vietnamgovernment.vn</li>
-            <li><strong>Website:</strong> https://chinhphu.vn</li>
-          </ul>
-        </div>
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <label for="name">Họ và tên</label>
+                <input type="text" id="name" name="name" placeholder="Nhập họ tên của bạn" required>
+            </div>
 
-        <form class="contact-form">
-          <h2>Gửi góp ý</h2>
-          <label>
-            Họ và tên
-            <input type="text" placeholder="Nhập họ và tên">
-          </label>
-          <label>
-            Email
-            <input type="email" placeholder="Nhập email">
-          </label>
-          <label>
-            Nội dung
-            <textarea rows="5" placeholder="Nhập nội dung"></textarea>
-          </label>
-          <button type="submit" class="btn btn-primary">Gửi</button>
+            <div class="form-group">
+                <label for="subject">Tiêu đề</label>
+                <input type="text" id="subject" name="subject" placeholder="Nhập tiêu đề tin nhắn" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Tin nhắn</label>
+                <textarea id="message" name="message" rows="6" placeholder="Nhập nội dung bạn muốn gửi..." required></textarea>
+            </div>
+
+            <button type="submit">Gửi tin nhắn</button>
         </form>
-      </div>
-    </section>
-  </main>
+    </main>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <h4>Liên hệ</h4>
-        <p>Thông tin liên hệ, truyền thông và góp ý.</p>
-      </div>
-      <div>
-        <h4>Trang</h4>
-        <ul>
-          <li><a href="index.html">Trang chủ</a></li>
-          <li><a href="about.html">Giới thiệu</a></li>
-          <li><a href="institutions.html">Cơ quan</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Thông tin</h4>
-        <p>Website được xây dựng theo đúng yêu cầu HTML5 + CSS3.</p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2026 - Cơ cấu tổ chức chính phủ Việt Nam</p>
-    </div>
-  </footer>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value.trim();
+            const subject = document.getElementById('subject').value.trim();
+            const message = document.getElementById('message').value.trim();
+            const email = '2531540370@vaa.edu.vn';
+
+            if (!name || !subject || !message) {
+                alert('Vui lòng điền đầy đủ họ tên, tiêu đề và tin nhắn.');
+                return;
+            }
+
+            const body = encodeURIComponent(
+                'Họ tên: ' + name + '\n\n' +
+                'Tin nhắn:\n' + message
+            );
+
+            window.location.href = 'mailto:' + email + '?subject=' + encodeURIComponent(subject) + '&body=' + body;
+            this.reset();
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2026 Bài tập Web Tĩnh - Thực hiện bởi: Đinh Trí Dũng.</p>
+        <p>Nội dung tham khảo từ: <a href="https://chinhphu.vn" target="_blank">Cổng Thông tin điện tử Chính phủ</a></p>
+    </footer>
 </body>
 </html>
